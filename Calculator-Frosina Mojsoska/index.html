@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="calculator"> -->
+    <div class="screen">
+        <div id="result"></div>
+        <div id="input"></div>
+    </div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="operator" id="mod">%</td>
+                <td class="numbers change" id="sqrt">&radic;</td>
+                <td class="numbers change" id="power">x<sup>2</sup></td>
+                <td class="numbers change" id="inverse">1/x</td>
+            </tr>
+
+
+
+            <tr>
+                <td id="ce" class="numbers change">CE</td>
+                <td id="c" class="delete">C</td>
+                <td class="numbers change" id="x"> &#9938; </td>
+                <td class="operator" id="div">/</td>
+            </tr>
+
+            <tr>
+                <td class="numbers" id="seven">7</td>
+                <td class="numbers" id="eight">8</td>
+                <td class="numbers" id="nine">9</td>
+                <td class="operator" id="mul">*</td>
+            </tr>
+
+            <tr>
+                <td class="numbers" id="four">4</td>
+                <td class="numbers" id="five">5</td>
+                <td class="numbers" id="six">6</td>
+                <td class="operator" id="sub">-</td>
+            </tr>
+
+            <tr>
+                <td class="numbers" id="one">1</td>
+                <td class="numbers" id="two">2</td>
+                <td class="numbers" id="three">3</td>
+                <td class="operator" id="add">+</td>
+            </tr>
+
+            <tr>
+                <td class="numbers change" id="opposite">+ -</td>
+                <td class="numbers" id="zero">0</td>
+                <td class="numbers" id="point">.</td>
+                <td class="operator" id="equal">=</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <!-- </div> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="functions.js"></script>
+    <script src="inputAndCalculations.js"></script>
+
+</body>
+
+</html>

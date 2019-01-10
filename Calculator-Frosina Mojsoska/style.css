@@ -1,0 +1,169 @@
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    
+}
+body
+{
+    margin: 40px 80px;
+    width: 100%;
+    height: 100%;
+
+    background-attachment: fixed;
+    color: #6cacc5;
+   
+
+    
+ background-image: linear-gradient(to bottom right, #F0E9EC,  #c0b6c1,#647367, #2E3D3B);
+   
+}
+
+.calculator{
+    /* width: 310px;
+    height: 450px; */
+    margin:0;
+    border:3px solid #666699;
+    text-align: center;
+    font-size: 18px;
+background-color: #666699;
+
+}
+td{
+    padding: 10px 20px ;
+    text-align: center;
+    width:45px;
+    height: 45px;
+  
+    
+  
+ background:#50677c; 
+ /* background: #606d7d; */
+ 
+
+    
+    
+
+}
+
+
+table{
+    margin:0px 10px 10px 10px;
+    /* background: rgba(42,50,113, .28); */
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom right, #2a2225,#47393e); 
+    font-size: 18px;
+    
+    width: 354px;
+    height: 250px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.screen
+{
+    margin:20px 10px 0px 10px; 
+    height: 150px;
+    width: 352px;
+    border:1px solid  #2a2225 ; 
+text-align: end;
+    background-color:#201a1c; 
+ background-image: linear-gradient(to bottom right, #2a2225,#47393e); 
+ box-shadow: 5px 5px 5px #888888;
+ 
+    
+    
+    font-size: 30px;
+  
+}
+#result{
+    margin: 10px;
+    width: 332px;
+    height: 50px;
+    overflow:auto;
+    -webkit-overflow-style:marquee,panner; 
+     word-wrap: break-word; 
+     
+    
+}
+#input
+{
+    margin: 10px;
+    width: 332px;
+    height: 50px;
+    overflow:auto;
+    -webkit-overflow-style:marquee,panner; 
+    word-wrap: break-word; 
+}
+ td:hover {
+    background:#5c6e8a;
+  }
+  
+  .operator
+  {
+    background-color:#839aaf;
+  }
+
+  
+
+  #sqrt
+  {
+    background-color:#839aaf;
+  }
+  #sqrt:hover {
+    background:#5c6e8a;
+  }
+  
+
+  #power
+  {
+    background-color:#839aaf;
+  }
+  #power:hover {
+    background:#5c6e8a;
+  }
+#inverse
+{
+    background-color:#839aaf;
+  }
+
+  #inverse:hover {
+    background:#5c6e8a;
+  }
+#equal
+{
+
+ background-color: #d1c700;
+
+} 
+#equal:hover
+{
+
+ background-color: #c4c10bd5;
+
+} 
+
+#ce
+{
+    background-color: #93b1b8;
+}
+#ce:hover {
+    background:#518a97;;
+  }
+#c
+{
+    background-color: #93b1b8;
+}
+#c:hover {
+    background:#518a97;;
+  }
+#x
+{
+    background-color: #93b1b8;
+}
+#x:hover {
+    background:#518a97;;
+  }
