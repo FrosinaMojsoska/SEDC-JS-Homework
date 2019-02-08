@@ -1,0 +1,79 @@
+body {
+    background-image: url('./assets/starwars-background.jpg');
+    background-attachment: fixed;
+}
+
+#body, thead{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#height{
+    cursor: pointer;
+}
+
+#navbar{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgb(3, 160, 3)
+}
+
+.display-none {
+    display: none;
+}
+
+.logo {
+    width: 900px;
+    height: 420px;
+    margin: 0 auto;
+}
+
+.error-message{
+    color: yellow;
+    font-size: 20px;
+    width: 540px;
+    margin: 5px 15px;
+    height: 40px;
+    background-color:rgba(51, 170, 51, .4);
+
+}
+
+
+#peopleDetailsT{
+    padding: 50px;
+    color: yellow;
+    font-size: 20px;
+    width: 540px;
+    margin: 5px 15px;
+    height: auto;
+    background-color:rgba(51, 89, 170, 0.4);
+    border: 3px solid rgb(31, 41, 63);
+    margin: 20px 340px;
+}
+
+#peopleDetailsT ul{
+list-style-type: none;
+padding: 5px;
+text-align: center;
+}
+
+#oneMovieDetails
+{
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    width: auto;
+    margin: 5px 15px;
+    height: auto;
+    background-color:rgba(104, 168, 228, 0.6);
+    padding: 10px;
+    border-color:rgb(51, 89, 170);;
+    border-style: solid;
+    border-width: 3px;
+
+}
+
+#oneMovieDetails ul
+{
+padding: 30px;
+list-style-type: none;
+
+}
