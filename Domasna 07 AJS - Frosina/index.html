@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Starships</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Starships</a>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="create">Create
+            New
+            Starship</button>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card hidden" style="width: 18rem;">
+                    <img class="card-img-top" src="img/StarFighter.png" width=200px height=200px alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Fighter starship</h5>
+                        <table id="fighter0" class="card-text"></table>
+                        <a href="#" class="btn btn-primary" id="startEngine"> Start Engine</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="startEngineMethod">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="takeOff"> Take Off</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="takeOffMethod">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="land"> Land</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="landMethod">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="shoot1">Shoot Weapon 1</a>
+
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="shoot1Method">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="shoot2">Shoot Weapon 2</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="shoot2Method">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="shoot3">Shoot Weapon 3</a>
+                        <br />
+
+                        <div class="alert alert-primary hidden" role="alert" id="shoot3Method">
+
+                        </div>
+                        <br />
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card hidden" style="width: 18rem;">
+                    <img class="card-img-top" src="img/cargo1.png" width=200px height=200px alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cargo starship</h5>
+                        <table id="cargo0" class="card-text"></table>
+
+                        <a href="#" class="btn btn-primary" id="startEngine1"> Start Engine</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="startEngineMethod1">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="takeOff1"> Take Off</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="takeOffMethod1">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="land1"> Land</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="landMethod1">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="load">Load</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="loadMethod">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="unload">Unload</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="unloadMethod">
+
+                        </div>
+                        <br />
+
+                    </div>
+                </div>
+
+                <div class="alert alert-primary hidden" id="error" role="alert">
+                    You need to have 3 different types of starships!
+                </div>
+            </div>
+            <div class="col">
+                <div class="card hidden" style="width: 18rem;">
+                    <img class="card-img-top" src="img/miner1.png" width=200px height=200px alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mining starship</h5>
+                        <table id="mining0" class="card-text"></table>
+                        <a href="#" class="btn btn-primary" id="startEngine2"> Start Engine</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="startEngineMethod2">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="takeOff2"> Take Off</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="takeOffMethod2">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="land2"> Land</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="landMethod2">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="mine">Mine</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="mineMethod">
+
+                        </div>
+                        <br />
+                        <a href="#" class="btn btn-primary" id="storageT">Set Storage Temperature</a>
+                        <br />
+                        <div class="alert alert-primary hidden" role="alert" id="storageTMethod">
+
+                        </div>
+                        <br />
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="starships.js"></script>
+    <script src="method.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Shipyard</h5>
+                <button type="button" class="hideAll close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="types">
+                    <button id="fighterBuilder" class="btn btn-primary btn-lg btn-block">Fighter</button>
+                    <button id="cargoBuilder" class="btn btn-primary btn-lg btn-block">Cargo</button>
+                    <button id="minerBuilder" class="btn btn-primary btn-lg btn-block">Miner</button>
+                </div>
+                <div class="builder hidden">
+                    <div id="starship">
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Name: </span>
+                            </div>
+                            <input id="name" type="text" aria-label="First name" class="form-control">
+                        </div>
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Pilot: </span>
+                            </div>
+                            <input id="pilot" type="text" aria-label="First name" class="form-control">
+                        </div>
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Fuel Tank: </span>
+                            </div>
+                            <input id="tank" type="text" aria-label="First name" class="form-control">
+                        </div>
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Stationed: </span>
+                            </div>
+                            <input id="currentLoc" type="text" aria-label="First name" class="form-control">
+                        </div>
+                    </div>
+                    <div id="fighter" class="shipType hidden">
+
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Weapons: </span>
+                            </div>
+                            <input id="weapons" type="text" aria-label="First name" class="form-control">
+                        </div>
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Shield: </span>
+                            </div>
+                            <input id="shield" type="text" aria-label="First name" class="form-control">
+                        </div>
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Kills: </span>
+                            </div>
+                            <input id="kills" type="text" aria-label="First name" class="form-control">
+                        </div>
+                    </div>
+                    <div id="cargo" class="shipType hidden">
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Cargo Capacity: </span>
+                            </div>
+                            <input id="cargoCap" type="text" aria-label="First name" class="form-control">
+                        </div>
+
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Trading Route: </span>
+                            </div>
+                            <input id="tradeRoute" type="text" aria-label="First name" class="form-control">
+                        </div>
+
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Loading Cranes: </span>
+                            </div>
+                            <input id="cranes" type="text" aria-label="First name" class="form-control">
+                        </div>
+                    </div>
+                    <div id="miner" class="shipType hidden">
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Mining Tools: </span>
+                            </div>
+                            <input id="mineTools" type="text" aria-label="First name" class="form-control">
+                        </div>
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Mining Types: </span>
+                            </div>
+                            <input id="mineTypes" type="text" aria-label="First name" class="form-control">
+                        </div>
+                        <div class="input-group factory-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Ore Storage cap: </span>
+                            </div>
+                            <input id="oreCap" type="text" aria-label="First name" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="builder modal-footer hidden">
+                <button type="button" class="btn btn-secondary hideAll" data-dismiss="modal">Close</button>
+                <button id="build" type="button" class="btn btn-primary">Create New Ship</button>
+            </div>
+        </div>
+    </div>
+</div>
